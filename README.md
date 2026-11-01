@@ -1,29 +1,27 @@
-# METRO CITY: REBORN
+# TAJIKISTAN NEW 🇹🇯
 
-**Desktop-first city-building game by JABORZODA FAYZALI.**
+**Интерактивный цифровой город жителей Таджикистана.**
 
-## Play on a laptop
-Open **https://jaborzodatd.github.io/-/** in Chrome, Edge, or Firefox. Use fullscreen (F11) for the best experience. The game is designed for a mouse and keyboard and runs in the browser; no installer is required.
+🌐 Сайт: https://jaborzodatd.github.io/-/
 
-## Current gameplay
-- 40×40 buildable map with an isometric city view, river, day/night tint, windows and moving cars.
-- Draw roads by dragging with the road tool.
-- Paint residential, commercial, and industrial districts; connected districts can grow into buildings as simulation time advances.
-- Construct homes, shops, offices, factories, parks, power and water facilities, clinics, schools, police stations, fire stations, stadiums, and solar power.
-- Manage city funds, taxes, population, happiness, utility coverage and daily operating income.
-- Demolish and upgrade buildings, pause simulation, adjust simulation speed, rename the city, and save locally in the browser.
+## Возможности текущей версии
+- Адаптивная главная страница для телефона и компьютера.
+- Изометрическая карта города на Canvas: здания, дома, улицы, парки и деревья.
+- Перетаскивание карты и масштабирование колесом мыши.
+- Регистрация демонстрационного жителя по нику.
+- Генерация номера дома и персонального адреса.
+- Поиск жителя по нику на том же устройстве.
+- Создание и сохранение PNG-карточки жителя.
+- Локальное сохранение данных через localStorage.
 
-## Controls
-- **Mouse click:** place a building / select a tile.
-- **Drag with Road selected:** draw a road segment.
-- **Drag with other tools:** pan the map.
-- **Mouse wheel:** zoom.
-- **1:** selection mode; **T:** road; **Z:** residential zone; **Y:** home; **4–9:** additional build tools.
-- **2 / 3:** simulation speed; **Space:** pause; **Esc:** return to selection.
-- **Ctrl+S:** save the city.
+## Важное ограничение демоверсии
+Сейчас жители и номера домов сохраняются только в браузере конкретного устройства. Это не общая онлайн-база: другие посетители не увидят зарегистрированных здесь жителей. Регистрация по нику не подтверждает владение Instagram-аккаунтом.
 
-## Save data
-The city is saved in the browser's local storage on the same device and browser. Clearing browser site data can remove the save, so keep that in mind.
+## Следующий этап
+Подключить Supabase для общей базы жителей, уникальности ников и адресов, безопасных публичных профилей и синхронизации между устройствами. Для этого нужен отдельный Supabase project URL и anon public key; секретный service-role key нельзя размещать в браузере.
 
-## Development status
-This is an actively developed independent project inspired by browser city builders. It is not a one-to-one copy of CityRT, and it does not yet include online multiplayer or a catalog of hundreds of building models. Future work can add richer district growth, traffic, more maps and visual styles, deeper service/utility simulation, and export/import saves.
+## Сохранённый предыдущий проект
+Прежняя игра Metro City: Reborn сохранена в файле [metro-city.html](./metro-city.html).
+
+## Публикация
+GitHub Pages автоматически публикует содержимое корня репозитория при push в ветку `main` через workflow `.github/workflows/pages.yml`.
